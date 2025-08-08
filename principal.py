@@ -97,7 +97,7 @@ if 'is_logged_in' not in st.session_state or not st.session_state['is_logged_in'
 else:
     st.set_page_config(page_title="Sistema de Evaluación UREP", layout="wide")
     logo = Image.open("logo_2.png")
-    col1, space1, col = st.columns([2, 4,10], vertical_alignment="center")
+    col1, space1, col = st.columns([2, 4.5,10], vertical_alignment="center")
     with col1:
         if st.button("Cerrar sesión", key="cerrar", type="secondary", help="Cerrar sesión", use_container_width=True):
             st.session_state.clear()
