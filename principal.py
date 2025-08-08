@@ -69,7 +69,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 if 'is_logged_in' not in st.session_state or not st.session_state['is_logged_in']:
-    st.set_page_config(layout="centered")
+    st.set_page_config(page_title="Sistema de Evaluación UREP",layout="centered")
     st.markdown("""
     <style>
     [data-testid="stApp"] {
