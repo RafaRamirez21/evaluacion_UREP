@@ -147,7 +147,7 @@ documento_actual = st.session_state.get("documento_seleccionado", None)
 
 # Mostrar solo los botones funcionales
 for doc in botones_sidebar:
-    if st.sidebar.button(doc, key=f"btn_{doc}", type="primary"):
+    if st.sidebar.button(doc, key=f"btn_{doc}", type="primary", use_container_width=True):
         # Guardar la evaluación actual antes de cambiar de documento
         if documento_actual:
             st.session_state["evaluaciones_documentos"][documento_actual] = st.session_state["observaciones_dict"].copy()
