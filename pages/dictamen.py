@@ -628,7 +628,7 @@ def generar_dictamen_complementario():
     return output
 
 # Botón para generar y descargar el informe
-if st.sidebar.button('Generar Reportes', key="generar", type='secondary'):
+if st.sidebar.button('Generar Reportes', key="generar", type='secondary', use_container_width=True):
     # Guardar la evaluación actual antes de generar el reporte
     if documento_actual:
         st.session_state["evaluaciones_documentos"][documento_actual] = st.session_state["observaciones_dict"].copy()
